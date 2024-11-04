@@ -22,7 +22,7 @@ Download <span>step.py</span> and requirements.txt, then:
 Install the latest version of python from the [python homepage](https://www.python.org/downloads/).
 The latest version for Windows 64-bit can be found here: [Windows installer (64-bit)](https://www.python.org/ftp/python/3.13.0/python-3.13.0-amd64.exe)
 Be sure to check the box for "**Add python.exe to PATH**" in the installation wizard.
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/AddToPath.PNG)
 Check if installation was successful by opening the command line (cli) and enter
  `python --version` The installed python version should be printed.
 - [ ] **Download files**

@@ -31,11 +31,10 @@ Create a new directory, e.g. on your desktop and download _step_._py_ and _requi
 - [ ] **(Optional but recommended) Install a virtual environment**
 *Using a virtual environment (venv) let's you install all the needed packages in one place so you can just delete the folder afterwards and don't need to cleanup too much.*
 	- Open a cli in the new directory (just type `cmd` in the top part of the windows file explorer) 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/CmdAtTop.png)
 	- Enter `python -m venv venv_steg` and wait
 	- By running the _venv_steg\Scripts\activate_ file you can can start the virtual environment, which will be recognizable by printing its name in the beginning of the command line. 
- 	- To use the virtual environment just start all future commands from here. 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+ 	- To use the virtual environment just start all future commands from here. ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/Venv.png)
 - [ ] **Install the required python packages**
 	-  Run `pip install -r requirements.txt` and wait for installation to finish
 
@@ -48,7 +47,7 @@ There are 2 main functions.
 ### encode
 What you need:
 - [ ] A carrier image ***input***, in which the content will be hidden. .JPG or .JPEG images can not be used, because of their lossy compressions. An example image: 
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/cat.png)
 - [ ] A file you want to hide ***file***. This can be any file (e.g. another image, a text file...), however the size is limited by the size of the carrier image. As a rule of thumb: The larger the carrier image, the more data can be hidden inside.
 
 - [ ] A name for the resulting image ***output***. 
@@ -63,8 +62,7 @@ To hide the text file helloworld.txt in the image cat.png and save the file as n
 ### decode
 What you need:
 - [ ] An image containing a hidden message/file ***input***. For example this one 
-- [ ] new_cat.png
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/new_cat.png)
 
 
 - [ ] A name for the hidden file once it's extracted ***output***. 

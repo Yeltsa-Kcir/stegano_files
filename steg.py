@@ -66,7 +66,7 @@ class SteganographyException(Exception):
     pass
 
 
-class steg():
+class LSBsteg():
     def __init__(self, im):
         self.image = im
         self.height, self.width, self.nbchannels = im.shape
@@ -223,14 +223,14 @@ class steg():
             return user_extension
         else:
             print("Keine passende Signatur gefunden. Datei wird als .txt gespeichert.")
-            return '.txt'
+            return 'txt'
 
 def main():
     args = docopt.docopt(__doc__, version="0.2")
     in_f = args["--in"]
     out_f = args["--out"]
     in_img = cv2.imread(in_f)
-    steg = steg(in_img)
+    steg = LSBsteg(in_img)
     lossy_formats = ["jpeg", "jpg"]
 
     if args['encode']:

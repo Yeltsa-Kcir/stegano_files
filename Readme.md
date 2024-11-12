@@ -22,7 +22,7 @@ This version tries to guess the correct filetype after decoding by reading the f
 
 ## Installation - Quick-Setup
 
-Download step.py and requirements.txt, then:  
+Download steg.py and requirements.txt, then:  
 `$ pip install -r requirements.txt`
 
 
@@ -37,7 +37,7 @@ Check if installation was successful by opening the command line (cli) and enter
  `python --version`  
 The installed python version should be printed.  
 - [ ] **Download files**  
-Create a new directory, e.g. on your desktop and download step.py and _requirements.txt_
+Create a new directory, e.g. on your desktop and download steg.py and _requirements.txt_
 
 - [ ] **(Optional but recommended) Install a virtual environment**  
 *Using a virtual environment (venv) let's you install all the needed packages in one place so you can just delete the folder afterwards and don't need to cleanup too much.*

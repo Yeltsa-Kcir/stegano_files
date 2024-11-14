@@ -1,4 +1,4 @@
 docopt==0.6.2
-numpy==2.1.1
+numpy
 opencv-python==4.10.0.84
 pillow==10.4.0

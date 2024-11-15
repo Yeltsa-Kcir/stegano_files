@@ -214,15 +214,16 @@ class LSBsteg():
         for signature, extension in file_signatures.items():
             if file_bytes.startswith(signature):
                 if user_extension and user_extension != extension:
-                    print(f"Signatur passt nicht zum angegebenen Dateiformat ({user_extension}). Möglicherweise zu .txt umbenennen?")
+                    None
+                    #print(f"Signatur passt nicht zum angegebenen Dateiformat ({user_extension}). Möglicherweise zu .txt umbenennen?")
                 return extension
 
         # Fallback: Verwende die vom Benutzer angegebene Endung oder '.txt'
         if user_extension:
-            print(f"Signatur passt nicht zum angegebenen Dateiformat ({user_extension}). Möglicherweise zu .txt umbenennen?")
+            #print(f"Signatur passt nicht zum angegebenen Dateiformat ({user_extension}). Möglicherweise zu .txt umbenennen?")
             return user_extension
         else:
-            print("Keine passende Signatur gefunden. Datei wird als .txt gespeichert.")
+            #print("Keine passende Signatur gefunden. Datei wird als .txt gespeichert.")
             return 'txt'
 
 def main():
@@ -258,6 +259,7 @@ def main():
         ext = steg.get_file_extension(bytes(raw))
         with open(f"{out_f}.{ext}", "wb") as f:
             f.write(raw)
+            print(f"Datei extrahiert und als {out_f}.{ext} gespeichert.")
 
 
 if __name__=="__main__":

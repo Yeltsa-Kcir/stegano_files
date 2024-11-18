@@ -50,9 +50,10 @@ Create a new folder/directory, e.g. on your desktop and download steg.py and _re
 ## Examples
 
 #### #decode
-<p>To retrieve the hidden file from new_cat.png (=input)  
+To retrieve the hidden file from new_cat.png (=input)  
 and save it as _hidden_message_ (=output)  
-put the image in the same directory/folder as _steg_._py_  </p>
+put the image in the same directory/folder as _steg_._py_  
+
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/directory_view.PNG)  
 
 and run this
@@ -63,10 +64,10 @@ The extracted file will be saved in the same directory/folder as _hidden_message
 
 
 #### #encode
-<p>To hide the text file _helloworld.txt_ (=file)  
+To hide the text file _helloworld.txt_ (=file)  
 in the image _cat.png_ (=input)  
 and save the file as _new_cat.png_ (=output)  
-place all the files in the same directory/folder as the _steg_._py_ script and use:</p>  
+place all the files in the same directory/folder as the _steg_._py_ script and use: 
 `python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`  
 
 

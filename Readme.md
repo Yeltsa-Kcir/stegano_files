@@ -45,12 +45,32 @@ Create a new folder/directory, e.g. on your desktop and download steg.py and _re
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/CmdAtTop.PNG)  
 <sup>Where to write "cmd"</sup>  
 	- Enter `python -m venv venv_steg` and wait  
-	- By running the _venv_steg\Scripts\activate_ file you can can start the virtual environment, which will be recognizable by printing _(venv_steg)_ in the beginning of the command line.  
- 	- To use the virtual environment just start all future commands from here.
-![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/Venv.PNG)  
-<sup>Installing and using venv</sup>  
+	- Run 'venv_steg\Scripts\activate' 
+	to start the virtual environment, which will be recognizable by printing _(venv_steg)_ in the beginning of the command line.  
 - [ ] **Install the required python packages**  
 	-  Run `pip install -r requirements.txt` and wait for installation to finish
+
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/Venv.PNG)  
+<sup>Installing and using venv</sup>  
+
+## Examples
+
+#### encode
+To hide the text file helloworld.txt in the image cat.png and save the file as new_cat.png place the files in the same folder as the steg_._py script and use: 
+`python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`  
+
+#### example
+To retrieve the hidden file from new_cat.png and save it as _hidden_message_ put the image in the same directory/folder as _steg_._py_
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/directory_view.PNG)  
+<sup>example directory</sup> 
+
+and run this
+`python steg.py decode -i new_cat.png -o hidden_message`  
+
+![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/example_decode.PNG)  
+<sup>example decode</sup> 
+
+The extracted file will be saved in the same directory/folder as _hidden_message_.
 
 ## Usage
 
@@ -83,9 +103,7 @@ To hide data inside of an image. What you need:
 To use the `encode` function, use the following console command (from within the virtual environment) and replace \<input\>, \<output\> and \<file\> with the aforementioned parts. 
 
 `python steg.py encode -i <input> -o <output> -f <file>`
-#### example
-To hide the text file helloworld.txt in the image cat.png and save the file as new_cat.png place the files in the same folder as the steg_._py script and use: 
-`python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`    
+  
 
 ### decode
 To extract data from an image. What you need:  
@@ -100,11 +118,9 @@ To extract data from an image. What you need:
 To use the `decode` function, use the following console command (from within the virtual environment) and replace \<input\>, \<output\> and \<file\> with the aforementioned parts. 
 
 `python steg.py decode -i <input> -o <output>`
-#### example
-To retrieve the hidden file from new_cat.png and save it as _hidden_message_ use:  
-`python steg.py decode -i new_cat.png -o hidden_message`  
 
 You don't need to guess a filetype for the hidden message as the script will try to match it accordingly. 
+
 
 ## License
 

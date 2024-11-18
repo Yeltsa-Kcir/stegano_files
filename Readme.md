@@ -66,7 +66,7 @@ The extracted file will be saved in the same directory/folder as _hidden_message
 To hide the text file _helloworld.txt_ (=file)  
 in the image _cat.png_ (=input)  
 and save the file as _new_cat.png_ (=output)  
-place all the files in the same directory/folder as the _steg_._py_ script and use: 
+place all the files in the same directory/folder as the _steg_._py_ script and use:  
 `python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`  
 
 

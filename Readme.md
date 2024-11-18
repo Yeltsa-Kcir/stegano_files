@@ -18,9 +18,6 @@ I used the most basic method which is the least significant bit. A colour pixel 
 
 This version tries to guess the correct filetype after decoding by reading the files binary signature and adds the correct extension to the file.
 
-**Graphic showing how to transform**
-![](image to add)
-
 ## Installation - Quick-Setup
 
 Download steg.py and requirements.txt, then:  
@@ -34,9 +31,7 @@ The latest version for Windows 64-bit can be found here: [Windows installer (64-
 Be sure to check the box for "**Add python.exe to PATH**" in the installation wizard.
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/AddToPath.PNG)  
 <sup>Screenshot showing the relevant option in the installer</sup>  
-Check if installation was successful by opening the command line (cli) and enter  
- `python --version`  
-The installed python version should be printed.  
+
 - [ ] **Download files**  
 Create a new folder/directory, e.g. on your desktop and download steg.py and _requirements.txt_
 
@@ -46,17 +41,17 @@ Create a new folder/directory, e.g. on your desktop and download steg.py and _re
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/CmdAtTop.PNG)  
 <sup>Where to write "cmd"</sup>  
 	- Enter `python -m venv venv_steg` and wait  
-	- Run 'venv_steg\Scripts\activate' 
+	- Run `venv_steg\Scripts\activate` 
 	to start the virtual environment, which will be recognizable by printing _(venv_steg)_ in the beginning of the command line.  
 - [ ] **Install the required python packages**  
 	-  Run `pip install -r requirements.txt` and wait for installation to finish
 
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/Venv.PNG)  
-<sup>Installing and using venv</sup>  
+<sup>CLI while installing venv and requirements</sup>  
 
 ## Examples
 
-#### decode
+#### #decode
 To retrieve the hidden file from new_cat.png and save it as _hidden_message_ put the image in the same directory/folder as _steg_._py_
 
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/directory_view.PNG)  
@@ -71,8 +66,14 @@ and run this
 The extracted file will be saved in the same directory/folder as _hidden_message_.
 
 
-#### encode
-To hide the text file helloworld.txt in the image cat.png and save the file as new_cat.png place the files in the same folder as the steg_._py script and use: 
+#### #encode
+To hide the text file _helloworld.txt_ (=file)
+
+in the image _cat.png_ (=input)
+
+and save the file as _new_cat.png_ (=output)
+
+place all the files in the same directory/folder as the _steg_._py_ script and use: 
 `python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`  
 
 
@@ -90,7 +91,7 @@ There are two main functions and a few options:
 | `-f,--file=<file> `   | option |  File to hide.       |
 
 
-### encode
+### #encode
 
 To hide data inside of an image. What you need:  
 - [ ] A carrier image `input`, in which the content will be hidden.  
@@ -109,7 +110,7 @@ To use the `encode` function, use the following console command (from within the
 `python steg.py encode -i <input> -o <output> -f <file>`
   
 
-### decode
+### #decode
 To extract data from an image. What you need:  
 - [ ] An image containing a hidden message/file `input`. Copy the image into the same folder/directory as the steg.py file.   
       For example this one:  

@@ -52,7 +52,7 @@ Create a new folder/directory, e.g. on your desktop and download steg.py and _re
 #### #decode
 <p>To retrieve the hidden file from new_cat.png (=input)  
 and save it as _hidden_message_ (=output)  
-put the image in the same directory/folder as _steg_._py_  
+put the image in the same directory/folder as _steg_._py_  </p>
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/directory_view.PNG)  
 
 and run this

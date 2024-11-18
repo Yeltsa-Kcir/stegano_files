@@ -7,8 +7,6 @@ This python program is based on the repository with the same name of [RobinDavid
 - [Installation - Step-By-Step](#installation---step-by-step)
 - [Examples](#examples)
 - [Usage](#usage)
-  * [encode](#encode)
-  * [decode](#decode)
 - [License](#license)
 
 ## Idea
@@ -52,28 +50,23 @@ Create a new folder/directory, e.g. on your desktop and download steg.py and _re
 ## Examples
 
 #### #decode
-To retrieve the hidden file from new_cat.png and save it as _hidden_message_ put the image in the same directory/folder as _steg_._py_
-
+<p>To retrieve the hidden file from new_cat.png (=input)  
+and save it as _hidden_message_ (=output)  
+put the image in the same directory/folder as _steg_._py_  
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/directory_view.PNG)  
-<sup>example directory</sup> 
 
 and run this
 `python steg.py decode -i new_cat.png -o hidden_message`  
-
 ![](https://github.com/Yeltsa-Kcir/stegano_files/blob/main/md_images/example_decode.PNG)  
-<sup>example decode</sup> 
 
 The extracted file will be saved in the same directory/folder as _hidden_message_.
 
 
 #### #encode
-To hide the text file _helloworld.txt_ (=file)
-
-in the image _cat.png_ (=input)
-
-and save the file as _new_cat.png_ (=output)
-
-place all the files in the same directory/folder as the _steg_._py_ script and use: 
+<p>To hide the text file _helloworld.txt_ (=file)  
+in the image _cat.png_ (=input)  
+and save the file as _new_cat.png_ (=output)  
+place all the files in the same directory/folder as the _steg_._py_ script and use:</p>  
 `python steg.py encode -i cat.png -o new_cat.png -f helloworld.txt`  
 
 
